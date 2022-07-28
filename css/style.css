@@ -1,0 +1,52 @@
+.col{
+    border: 1px solid black;
+}
+.top_text{
+    height: 60px;
+}
+h1{
+    color: darkgreen;
+}
+.row-cols-md-3{
+    height: 180px;
+}
+.right{
+    background: linear-gradient(90deg, #419a01, #185d01);
+}
+.center{
+    border-style: dashed;
+    background: linear-gradient(90deg,#89d305, #419a01);
+}
+.left{
+    background: linear-gradient(90deg, #f1ee1c, #89d305);
+}
+.left_toggle{
+    border-style: dashed;
+    background: linear-gradient(90deg,#89d305, #419a01);
+}
+.center_toggle{
+    border-style: solid;
+    background: linear-gradient(90deg, #f1ee1c, #89d305);
+}
+.row_btn{
+    height: 60px;
+}
+.col-md-4{
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.col-md-8{
+    padding-top: 10px;
+    padding-left: 28%;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.modal._active {
+    display: block;
+}
