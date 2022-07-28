@@ -6,7 +6,7 @@
     gap: 20px;
 }
 .form-select{
- width: 100px;
+    width: 100px;
 }
 .modal__input{
     margin-top: 80px;
@@ -28,5 +28,3 @@
     font-size: 15px;
     white-space: normal;
 }
-
-

@@ -3,6 +3,10 @@
 }
 .top_text{
     height: 60px;
+    opacity: 1;
+}
+.text_none {
+    opacity: 0;
 }
 h1{
     color: darkgreen;

@@ -6,18 +6,14 @@ const modalToForm = document.querySelector(".btn-primary");
 const btnText = document.querySelector(".btn-warning");
 const btnBlocks = document.querySelector(".btn-success");
 const BtnCloseModal = document.querySelector(".btn-secondary");
+
 btnText.addEventListener("click", changeBlockOne);
 btnBlocks.addEventListener("click", shiftBlocksToSecondRow);
 BtnCloseModal.addEventListener("click", handleCloseModal);
-modalToForm.addEventListener("click", openingToForm)
+modalToForm.addEventListener("click", openingToForm);
 
 function changeBlockOne() {
-    const display = block1.style.display;
-    if(display==='none'){
-        block1.style.display='block';
-    } else {
-        block1.style.display = 'none';
-    }
+    block1.classList.toggle('text_none');
 }
 function shiftBlocksToSecondRow() {
     block2.classList.toggle('left_toggle');
