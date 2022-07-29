@@ -1,9 +1,6 @@
 const submit = document.querySelector(".btn-success");
 const responseForm = document.querySelector(".response_form");
 submit.addEventListener("click", newForm);
-// let data1 =document.querySelectorAll('.request-elem');
-// console.log(data1);
-
 
 async function newForm() {
 
@@ -11,7 +8,6 @@ async function newForm() {
     Array.from(document.querySelectorAll('.form')).forEach(e => {
         res.push((Array.from(e.querySelectorAll('input,select')).map(e => e.value)));
     });
-    console.log(res);
 
     await fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
@@ -28,6 +24,5 @@ async function newForm() {
         })
         .then(json => {
             responseForm.innerHTML = 'response: ' + JSON.stringify(json);
-            console.log(JSON.stringify(json))
         })
 }
